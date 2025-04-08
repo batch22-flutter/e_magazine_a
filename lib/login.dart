@@ -1,3 +1,4 @@
+import 'package:e_magazine/user/flip.dart';
 import 'package:flutter/material.dart';
 
 import 'choosescreen.dart';
@@ -92,7 +93,11 @@ class LoginPage extends StatelessWidget {
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                     Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return PdfViewerPage();
+                  },));
+                  },
                   child: Text(
                     'Forgot Password?',
                     style: TextStyle(color: Colors.white54),
