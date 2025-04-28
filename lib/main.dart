@@ -37,19 +37,11 @@ class EMagazineHome extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
               child: Column(
                 children: [
+                  SizedBox(height: 60),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(20),
                     child: Image.asset(
-                      'assets/cover1.png',
-                      height: 180,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                  SizedBox(height: 20),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(20),
-                    child: Image.asset(
-                      'assets/cover1.png',
+                      'assets/logo.png',
                       height: 180,
                       fit: BoxFit.cover,
                     ),
@@ -57,7 +49,7 @@ class EMagazineHome extends StatelessWidget {
                 ],
               ),
             ),
-
+SizedBox(height: 40),
             // App Title and Description
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
